@@ -7,15 +7,15 @@ import { User } from 'react-feather';
 function Header() {
   return (
     <header className="header">
-      <div className="topbar">
-        <div className="pagename">
+      <div className="header-top">
+        <div className="header-logo">
           <Link to="/">SWFTSHP</Link>
         </div>
-        <div className="search">
-          <input type="text" placeholder="Search..." />
+        <div className="header-search">
+          <input type="text" placeholder="Search headphone, mobile, harddrive,..."></input>
           <button>Search</button>
           </div>
-        <div className="topbar-buttons">
+        <div className="header-nav">
           <Link to="/cart">
             <ShoppingBag color='black' />
           </Link>

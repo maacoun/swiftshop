@@ -4,8 +4,8 @@
 .page-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
   height: 100vh;
+  z-index: 1;
 }
 
 /* Header styling */
@@ -13,24 +13,25 @@
 .header {
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
   border-bottom: 1px solid #ddd;
 }
 
 /*Div pro logo, menu a košík */
-.topbar {
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 25px 20px 30px 20px;
 }
 
-.pagename {
-  font-size: 24px;
-  font-weight: bold;
+.header-logo {
+  display: flex;
   flex-grow: 1;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.search {
+.header-search {
   padding: 8px;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -41,7 +42,7 @@
   margin: 0 10px 0 10px;
 }
 
-.search input {
+.header-search input {
   border: none;
   padding: 8px;
   flex-grow: 2;
@@ -51,7 +52,7 @@ input:focus {
   outline: none;
 }
 
-.search button {
+.header-search button {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -61,18 +62,23 @@ input:focus {
   justify-content: flex-end;
 }
 
-.search button:hover {
+.header-search button:hover {
   background-color: #0069d9;
 }
 
-.search button:focus {
+.header-search button:focus {
   outline: none;
 }
 
-.topbar-buttons {
+.header-nav {
   display: flex;
-  justify-content: flex-end;
   flex-grow: 2;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-nav > * {
+  padding: 10px;
 }
 
 /*Div pro tlačítka pro navigaci mezi kategoriemi */
@@ -91,3 +97,87 @@ input:focus {
 }
 
 /* Other styling for your content */
+.page-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+/* PRODUKTY */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.product:hover {
+  cursor: pointer;
+}
+
+.product > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  height: 200px;
+  background-color: #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.product-price {
+  margin-bottom: 10px;
+  align-items: center;
+
+}
+
+.product-description {
+  margin-bottom: 10px;
+}
+
+.product-cart {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto auto 0 auto;
+  max-height: 400px;
+}
+
+.product-cart:hover {
+  background-color: #0069d9;
+}
+
+.product-cart:focus {
+  outline: none;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: inherit;
+}
