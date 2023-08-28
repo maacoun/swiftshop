@@ -106,10 +106,6 @@ input:focus {
 }
 
 /* PRODUKTY */
-.products {
-  padding: 20px;
-}
-
 .product-tile {
   display: flex;
   flex-direction: column;
@@ -188,6 +184,16 @@ a:-webkit-any-link {
 
 .slick-next::before, .slick-prev::before {
   content: none;
+}
+
+.slick-prev {
+  left: -20px;
+  z-index: 1;
+}
+
+.slick-next {
+  right: -20px;
+  z-index: 1;
 }
 
 /* Page banner */

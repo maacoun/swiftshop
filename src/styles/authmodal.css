@@ -1,0 +1,195 @@
+/* Styles for the entire modal */
+.auth-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .auth-modal.active {
+    opacity: 1;
+  }
+  
+  /* Styles for the modal content container */
+  .auth-modal-content {
+    width: 60%;
+    height: 60%;
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Styles for the left section of the modal */
+  .auth-modal-left {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styles for the right section of the modal */
+  .auth-modal-right {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* kvuli close buttonu */
+  }
+  
+  /* Styles for the close button */
+  .auth-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Styles for the signup and login links */
+  .auth-modal-signup,
+  .auth-modal-login {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .auth-modal-signup:hover,
+  .auth-modal-login:hover {
+    background-color: #0056b3;
+  }
+
+.signup-bonuses {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+}
+
+.signup-bonus {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.signup-bonus-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.signup-bonus-text {
+  font-size: 16px;
+}
+
+.signup-bonus-text span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.signup-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+  color: #fff;
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+}
+
+.auth-modal-input {
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.auth-modal-input label {
+  margin-bottom: 5px;
+}
+
+.auth-modal-input input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.auth-modal-input input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.auth-modal-input input::placeholder {
+  color: #ccc;
+}
+
+.auth-modal-checkbox {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.auth-modal-checkbox input {
+  margin-right: 10px;
+}
+
+.auth-modal-checkbox label {
+  margin-bottom: 0;
+}
+
+.auth-modal-checkbox a {
+  color: #007bff;
+}
+
+.auth-modal-checkbox a:hover {
+  text-decoration: underline;
+}
+
+.signin-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+  color: #fff;
+}
+
+.signin-button:hover {
+  background-color: #0056b3;
+}
+
+.auth-modal-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}

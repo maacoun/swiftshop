@@ -7,6 +7,7 @@ import ProductTile from '../components/ProductTile';
 import CountUpComponent from '../components/CountUp';
 import Footer from '../components/Footer';
 import { CarouselLeftArrow, CarouselRightArrow } from '../components/CarouselArrows'; // Import the arrows
+import { Toaster } from 'react-hot-toast';
 
 
 function Home() {
@@ -58,6 +59,7 @@ function Home() {
 
   return (
     <div className="page-container">
+      <Toaster/>
       <div className="wrapper">
       <Header />
       <div className="page-banner">
@@ -79,8 +81,8 @@ function Home() {
         <div className="products">
           {products.length > 0 ? (
             <Slider {...sliderSettings}>
-              {products.map((product) => (
-                <ProductTile key={product.id} product={product} />
+              {products.map((product, index) => (
+                <ProductTile key={index} product={product} />
               ))}
             </Slider>
           ) : (
