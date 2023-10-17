@@ -84,8 +84,8 @@ function AuthModal({ onClose, isModalOpen }) {
           </div>
         <div className="auth-modal-right">
           <X className="auth-modal-close" onClick={onClose} />
-          <p>You don't have an account yet?</p>
           <h1>Sign up</h1>
+          <p>You don't have an account yet?</p>
           <div className="signup-bonuses">
             <div className="signup-bonus">
               <Check className="signup-bonus-icon" />

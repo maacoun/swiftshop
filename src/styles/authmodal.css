@@ -46,7 +46,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative; /* kvuli close buttonu */
+    position: relative; /* kvuli close buttonu */ 
   }
   
   /* Styles for the close button */
